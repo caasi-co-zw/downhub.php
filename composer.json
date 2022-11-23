@@ -1,0 +1,19 @@
+{
+    "name": "caasi-co-zw/downhub",
+    "description": "Downloads files from a GitHub repository",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Caasi\\Downhub\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Isaac Machakata",
+            "email": "isaac@caasi.co.zw"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
