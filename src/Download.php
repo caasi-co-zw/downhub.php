@@ -2,10 +2,11 @@
 
 namespace Caasi\Downhub;
 
-if(!defined('DOWNHUB_CONFIG')){
-    define('DOWNHUB_CONFIG',new Configurations());
-}
-
+/**
+ * Download your repositories.
+ * @author Isaac Machakata <isaac@caasi.co.zw>
+ * @link https://github.com/caasi-co-zw/downhub.php
+ */
 class Download {
     /**
      * Undocumented variable
@@ -14,16 +15,15 @@ class Download {
      */
     private $config = [];
 
-    public function __construct(){
-        $this->config = DOWNHUB_CONFIG;
-    }
-
     /**
-     * Returns the API Token key
+     * Set your configurations 
      *
-     * @return string|null
+     * @param Configurations $config
+     * @return this
      */
-    private function getApiToken(){
-        return $this->config['token']??null;
+    public function __construct($config = null){
+        if($config){
+            $this->config = $config;
+        }
     }
 }
