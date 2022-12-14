@@ -13,9 +13,11 @@ class Config {
 
     public function setToken($token){
         $this->token = $token;
+        return $this;
     }
 
     public function setUsername($username){
         $this->username = $username;
+        return $this;
     }
 }
