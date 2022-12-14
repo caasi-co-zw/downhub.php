@@ -1,12 +1,17 @@
 <?php 
 
-if(!defined('DOWNHUB_CONFIG')){
-    define('DOWNHUB_CONFIG',[]);
-}
-
 namespace Caasi\Downhub;
 
+if(!defined('DOWNHUB_CONFIG')){
+    define('DOWNHUB_CONFIG',new Configurations());
+}
+
 class Download {
+    /**
+     * Undocumented variable
+     *
+     * @var Configurations
+     */
     private $config = [];
 
     public function __construct(){
