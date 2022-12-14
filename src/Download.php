@@ -13,22 +13,20 @@ use Guzzle\Http\Message\Response;
  * @link https://github.com/caasi-co-zw/downhub.php
  */
 class Download {
-    /**
-     * Undocumented variable
-     *
-     * @var Configurations
-     */
     private $config = [];
 
     /**
      * Set your configurations 
      *
      * @param Configurations $config
-     * @return this
      */
     public function __construct($config = null){
         if($config){
             $this->config = $config;
         }
     }
+
+    public function getRepositories(){}
+    public function downloadZip(){}
+    public function downloadTarball(){}
 }
