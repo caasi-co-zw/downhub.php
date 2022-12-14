@@ -6,6 +6,11 @@ class Repository {
     private $owner;
     private $name;
     private $branch;
+    private $is_private;
+
+    public function __construct(){
+        $this->is_private = false;
+    }
 
     public setOwner($owner){
         $this->owner = $owner;
@@ -19,4 +24,9 @@ class Repository {
         $this->branch = $branch;
         return $this;
     }
+    public function setVisibility($visibility){
+        $this->is_private = $visibility;
+        return $this;
+    }
+    public function isPrivateRepository(){}
 }
