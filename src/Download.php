@@ -2,6 +2,11 @@
 
 namespace Caasi\Downhub;
 
+use Guzzle\Http\Client;
+use Guzzle\Http\EntityBody;
+use Guzzle\Http\Message\Request;
+use Guzzle\Http\Message\Response;
+
 /**
  * Download your repositories.
  * @author Isaac Machakata <isaac@caasi.co.zw>
